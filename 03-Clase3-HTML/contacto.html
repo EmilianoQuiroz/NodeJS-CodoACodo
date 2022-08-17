@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactanos</title>
+  </head>
+  <body>
+    <!-- Menu de navegacion -->
+    <ul>
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="./contacto.html">Contacto</a></li>
+    </ul>
+    <!-- Formulario de contacto -->
+    <h1>Contactanos</h1>
+    <form action="" method="get">
+      <div>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Nombre"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="correo"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <input
+          type="password"
+          name="clave"
+          id="clave"
+          placeholder="Contraseña"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="mayorEdad">Mayor de edad?</label>
+        <input type="checkbox" name="mayorEdad" id="mayorEdad" />
+      </div>
+      <br />
+      <div>
+        <label for="estadiCivil">Estado Civil</label>
+        <br />
+        <input
+          id="inCasado"
+          name="estadoCivil"
+          value="casado"
+          type="radio"
+          checked
+        />
+        <label for="inCasado">Casado</label>
+        <br />
+        <input id="inSoltero" name="estadoCivil" value="soltero" type="radio" />
+        <label for="inSoltero">Soltero</label>
+      </div>
+      <br />
+      <label for="comentario">Comentario</label>
+      <textarea
+        name="comentario"
+        id="cpmentario"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br>
+      <input type="reset" value="Borrar formulario">
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
